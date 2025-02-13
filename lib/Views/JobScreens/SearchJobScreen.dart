@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../Controller/JobController.dart';
 import 'JobListScreen.dart';
-import '../../Widgets/CustomIconButton.dart';
-import '../../Widgets/CustomSearchbar.dart';
-import '../../Widgets/SearchFunctions.dart';
+import '../../Widgets/Jobwidgets/CustomIconButton.dart';
+import '../../Widgets/Jobwidgets/CustomSearchbar.dart';
+import '../../Widgets/Jobwidgets/SearchFunctions.dart';
 
 class Searchjobscreen extends StatefulWidget {
   const Searchjobscreen({super.key});

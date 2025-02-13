@@ -1,3 +1,4 @@
+import 'package:assistance_app/Controller/YtController.dart';
 import 'package:assistance_app/Views/HomeScreen.dart';
 import 'package:assistance_app/Views/JobScreens/SearchJobScreen.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,8 @@ runApp(
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => JobController()),
+                ChangeNotifierProvider(create: (_) => Ytcontroller()),
+
       ],
       child: MyApp(),
     ),

@@ -4,7 +4,7 @@ import 'Apilinks.dart';
 class JobService {
   Future<http.Response> fetchJobs(
       String query, int page, int numPages, String country, String datePosted) async {
-    final uri = Uri.parse(Apilinks.baseUrl).replace(queryParameters: {
+    final uri = Uri.parse(Apilinks.jobbaseUrl).replace(queryParameters: {
       'query': query,
       'page': page.toString(),
       'num_pages': numPages.toString(),
@@ -13,7 +13,7 @@ class JobService {
     });
 
     final response = await http.get(uri, headers: {
-      'x-rapidapi-host': Apilinks.apiHost,
+      'x-rapidapi-host': Apilinks.jobapiHost,
       'x-rapidapi-key': Apilinks.apiKey,
     });
 
